@@ -1,0 +1,995 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33D3E13E7FD8071164DE5581 /* Pods_GoodOnesTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A0FE743ABD696940B7A926 /* Pods_GoodOnesTest.framework */; };
+		3B8B6DBC282C6D53009C2DAB /* FireworkParticlesGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DBB282C6D53009C2DAB /* FireworkParticlesGeometryEffect.swift */; };
+		3B8B6DBE282C6D98009C2DAB /* ParticleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DBD282C6D98009C2DAB /* ParticleModifier.swift */; };
+		3B8B6DC0282C84F6009C2DAB /* IntroScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DBF282C84F6009C2DAB /* IntroScreen.swift */; };
+		3B8B6DCA282D2738009C2DAB /* GPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DC9282D2738009C2DAB /* GPhotos.swift */; };
+		3B8B6DCC282D275B009C2DAB /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DCB282D275B009C2DAB /* Const.swift */; };
+		3B8B6DCE282D277F009C2DAB /* AuthScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DCD282D277F009C2DAB /* AuthScope.swift */; };
+		3B8B6DD0282D2890009C2DAB /* GPhotosApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DCF282D2890009C2DAB /* GPhotosApi.swift */; };
+		3B8B6DD3282D2BA6009C2DAB /* MediaItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DD2282D2BA6009C2DAB /* MediaItemsService.swift */; };
+		3B8B6DD5282D2C09009C2DAB /* GPhotosService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DD4282D2C09009C2DAB /* GPhotosService.swift */; };
+		3B8B6DD7282D2CB7009C2DAB /* AlbumsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DD6282D2CB7009C2DAB /* AlbumsService.swift */; };
+		3B8B6DD9282D2CFA009C2DAB /* SharedAlbumsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DD8282D2CFA009C2DAB /* SharedAlbumsService.swift */; };
+		3B8B6DDC282D327E009C2DAB /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DDB282D327E009C2DAB /* Album.swift */; };
+		3B8B6DDE282D3299009C2DAB /* AlbumPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DDD282D3299009C2DAB /* AlbumPosition.swift */; };
+		3B8B6DE2282D3365009C2DAB /* AlbumsAddEnrichment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DE1282D3365009C2DAB /* AlbumsAddEnrichment.swift */; };
+		3B8B6DE4282D3389009C2DAB /* AlbumsAddMediaItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DE3282D3389009C2DAB /* AlbumsAddMediaItems.swift */; };
+		3B8B6DE6282D33B7009C2DAB /* AlbumsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DE5282D33B7009C2DAB /* AlbumsList.swift */; };
+		3B8B6DE8282D33D1009C2DAB /* AlbumsShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DE7282D33D1009C2DAB /* AlbumsShare.swift */; };
+		3B8B6DEA282D3430009C2DAB /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DE9282D3430009C2DAB /* Photos.swift */; };
+		3B8B6DEC282D3471009C2DAB /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DEB282D3471009C2DAB /* MediaItem.swift */; };
+		3B8B6DEE282D3495009C2DAB /* MediaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DED282D3495009C2DAB /* MediaMetadata.swift */; };
+		3B8B6DF1282D35AC009C2DAB /* BaseMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DF0282D35AC009C2DAB /* BaseMappable.swift */; };
+		3B8B6DF3282D35D8009C2DAB /* ContributorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DF2282D35D8009C2DAB /* ContributorInfo.swift */; };
+		3B8B6DF5282D35F1009C2DAB /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DF4282D35F1009C2DAB /* Status.swift */; };
+		3B8B6DF9282D36C5009C2DAB /* MediaItemsBatchGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DF8282D36C5009C2DAB /* MediaItemsBatchGet.swift */; };
+		3B8B6DFB282D36F7009C2DAB /* MediaItemBatchCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DFA282D36F7009C2DAB /* MediaItemBatchCreate.swift */; };
+		3B8B6DFD282D3716009C2DAB /* MediaItemsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DFC282D3716009C2DAB /* MediaItemsList.swift */; };
+		3B8B6DFF282D3731009C2DAB /* MediaItemsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6DFE282D3731009C2DAB /* MediaItemsSearch.swift */; };
+		3B8B6E02282D3777009C2DAB /* ContentFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6E01282D3777009C2DAB /* ContentFilter.swift */; };
+		3B8B6E04282D3798009C2DAB /* DateFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6E03282D3798009C2DAB /* DateFilter.swift */; };
+		3B8B6E06282D37BE009C2DAB /* FeatureFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6E05282D37BE009C2DAB /* FeatureFilter.swift */; };
+		3B8B6E08282D37D3009C2DAB /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6E07282D37D3009C2DAB /* Filters.swift */; };
+		3B8B6E0A282D37F0009C2DAB /* MediaTypeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6E09282D37F0009C2DAB /* MediaTypeFilter.swift */; };
+		3B8B6E0E282D3B50009C2DAB /* MediaItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6E0D282D3B50009C2DAB /* MediaItems.swift */; };
+		3B8B6E10282D3B71009C2DAB /* GPhotosResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6E0F282D3B71009C2DAB /* GPhotosResources.swift */; };
+		3B8B6E19282D4F5C009C2DAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B8B6E18282D4F5C009C2DAB /* GoogleService-Info.plist */; };
+		3B8B6E26282D616C009C2DAB /* SignOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6E25282D616C009C2DAB /* SignOutButton.swift */; };
+		3B8B6E2D282DB28C009C2DAB /* PhotoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B6E2C282DB28B009C2DAB /* PhotoImage.swift */; };
+		3BC07FF5282AF65A00D2A442 /* GoodOnesTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC07FF4282AF65A00D2A442 /* GoodOnesTestApp.swift */; };
+		3BC07FF7282AF65A00D2A442 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC07FF6282AF65A00D2A442 /* ContentView.swift */; };
+		3BC07FF9282AF65E00D2A442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC07FF8282AF65E00D2A442 /* Assets.xcassets */; };
+		3BC07FFC282AF65E00D2A442 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC07FFB282AF65E00D2A442 /* Preview Assets.xcassets */; };
+		3BC08006282AF65F00D2A442 /* GoodOnesTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC08005282AF65F00D2A442 /* GoodOnesTestTests.swift */; };
+		3BC08010282AF65F00D2A442 /* GoodOnesTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0800F282AF65F00D2A442 /* GoodOnesTestUITests.swift */; };
+		3BC08012282AF65F00D2A442 /* GoodOnesTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC08011282AF65F00D2A442 /* GoodOnesTestUITestsLaunchTests.swift */; };
+		3BC0801F282AF67C00D2A442 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0801E282AF67C00D2A442 /* CardView.swift */; };
+		3BC08021282AF74400D2A442 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC08020282AF74300D2A442 /* PhotosViewModel.swift */; };
+		3BC08023282B4DC300D2A442 /* GoogleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC08022282B4DC300D2A442 /* GoogleButton.swift */; };
+		3BC08025282B4E3E00D2A442 /* GoogleLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC08024282B4E3E00D2A442 /* GoogleLoginViewModel.swift */; };
+		3BC08027282B6B7600D2A442 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC08026282B6B7600D2A442 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BC08002282AF65F00D2A442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC07FE9282AF65A00D2A442 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC07FF0282AF65A00D2A442;
+			remoteInfo = GoodOnesTest;
+		};
+		3BC0800C282AF65F00D2A442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC07FE9282AF65A00D2A442 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC07FF0282AF65A00D2A442;
+			remoteInfo = GoodOnesTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17B8CF892986B30BD0788130 /* Pods-GoodOnesTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodOnesTest.debug.xcconfig"; path = "Target Support Files/Pods-GoodOnesTest/Pods-GoodOnesTest.debug.xcconfig"; sourceTree = "<group>"; };
+		3B8B6DBB282C6D53009C2DAB /* FireworkParticlesGeometryEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworkParticlesGeometryEffect.swift; sourceTree = "<group>"; };
+		3B8B6DBD282C6D98009C2DAB /* ParticleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleModifier.swift; sourceTree = "<group>"; };
+		3B8B6DBF282C84F6009C2DAB /* IntroScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreen.swift; sourceTree = "<group>"; };
+		3B8B6DC9282D2738009C2DAB /* GPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPhotos.swift; sourceTree = "<group>"; };
+		3B8B6DCB282D275B009C2DAB /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		3B8B6DCD282D277F009C2DAB /* AuthScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScope.swift; sourceTree = "<group>"; };
+		3B8B6DCF282D2890009C2DAB /* GPhotosApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPhotosApi.swift; sourceTree = "<group>"; };
+		3B8B6DD2282D2BA6009C2DAB /* MediaItemsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemsService.swift; sourceTree = "<group>"; };
+		3B8B6DD4282D2C09009C2DAB /* GPhotosService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPhotosService.swift; sourceTree = "<group>"; };
+		3B8B6DD6282D2CB7009C2DAB /* AlbumsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsService.swift; sourceTree = "<group>"; };
+		3B8B6DD8282D2CFA009C2DAB /* SharedAlbumsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAlbumsService.swift; sourceTree = "<group>"; };
+		3B8B6DDB282D327E009C2DAB /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		3B8B6DDD282D3299009C2DAB /* AlbumPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPosition.swift; sourceTree = "<group>"; };
+		3B8B6DE1282D3365009C2DAB /* AlbumsAddEnrichment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsAddEnrichment.swift; sourceTree = "<group>"; };
+		3B8B6DE3282D3389009C2DAB /* AlbumsAddMediaItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsAddMediaItems.swift; sourceTree = "<group>"; };
+		3B8B6DE5282D33B7009C2DAB /* AlbumsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsList.swift; sourceTree = "<group>"; };
+		3B8B6DE7282D33D1009C2DAB /* AlbumsShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsShare.swift; sourceTree = "<group>"; };
+		3B8B6DE9282D3430009C2DAB /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		3B8B6DEB282D3471009C2DAB /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		3B8B6DED282D3495009C2DAB /* MediaMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMetadata.swift; sourceTree = "<group>"; };
+		3B8B6DF0282D35AC009C2DAB /* BaseMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMappable.swift; sourceTree = "<group>"; };
+		3B8B6DF2282D35D8009C2DAB /* ContributorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorInfo.swift; sourceTree = "<group>"; };
+		3B8B6DF4282D35F1009C2DAB /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		3B8B6DF8282D36C5009C2DAB /* MediaItemsBatchGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemsBatchGet.swift; sourceTree = "<group>"; };
+		3B8B6DFA282D36F7009C2DAB /* MediaItemBatchCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemBatchCreate.swift; sourceTree = "<group>"; };
+		3B8B6DFC282D3716009C2DAB /* MediaItemsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemsList.swift; sourceTree = "<group>"; };
+		3B8B6DFE282D3731009C2DAB /* MediaItemsSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemsSearch.swift; sourceTree = "<group>"; };
+		3B8B6E01282D3777009C2DAB /* ContentFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentFilter.swift; sourceTree = "<group>"; };
+		3B8B6E03282D3798009C2DAB /* DateFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilter.swift; sourceTree = "<group>"; };
+		3B8B6E05282D37BE009C2DAB /* FeatureFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFilter.swift; sourceTree = "<group>"; };
+		3B8B6E07282D37D3009C2DAB /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		3B8B6E09282D37F0009C2DAB /* MediaTypeFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTypeFilter.swift; sourceTree = "<group>"; };
+		3B8B6E0D282D3B50009C2DAB /* MediaItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItems.swift; sourceTree = "<group>"; };
+		3B8B6E0F282D3B71009C2DAB /* GPhotosResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPhotosResources.swift; sourceTree = "<group>"; };
+		3B8B6E18282D4F5C009C2DAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B8B6E25282D616C009C2DAB /* SignOutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutButton.swift; sourceTree = "<group>"; };
+		3B8B6E2C282DB28B009C2DAB /* PhotoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImage.swift; sourceTree = "<group>"; };
+		3BC07FF1282AF65A00D2A442 /* GoodOnesTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodOnesTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC07FF4282AF65A00D2A442 /* GoodOnesTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodOnesTestApp.swift; sourceTree = "<group>"; };
+		3BC07FF6282AF65A00D2A442 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3BC07FF8282AF65E00D2A442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BC07FFB282AF65E00D2A442 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BC08001282AF65F00D2A442 /* GoodOnesTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodOnesTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC08005282AF65F00D2A442 /* GoodOnesTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodOnesTestTests.swift; sourceTree = "<group>"; };
+		3BC0800B282AF65F00D2A442 /* GoodOnesTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodOnesTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC0800F282AF65F00D2A442 /* GoodOnesTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodOnesTestUITests.swift; sourceTree = "<group>"; };
+		3BC08011282AF65F00D2A442 /* GoodOnesTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodOnesTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BC0801E282AF67C00D2A442 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3BC08020282AF74300D2A442 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		3BC08022282B4DC300D2A442 /* GoogleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleButton.swift; sourceTree = "<group>"; };
+		3BC08024282B4E3E00D2A442 /* GoogleLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginViewModel.swift; sourceTree = "<group>"; };
+		3BC08026282B6B7600D2A442 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BC08028282B731300D2A442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		66A0FE743ABD696940B7A926 /* Pods_GoodOnesTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodOnesTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		763BBB02D721936D96D5DB0E /* Pods-GoodOnesTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodOnesTest.release.xcconfig"; path = "Target Support Files/Pods-GoodOnesTest/Pods-GoodOnesTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BC07FEE282AF65A00D2A442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D3E13E7FD8071164DE5581 /* Pods_GoodOnesTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC07FFE282AF65F00D2A442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC08008282AF65F00D2A442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B8B6DC1282CE6D4009C2DAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BC08024282B4E3E00D2A442 /* GoogleLoginViewModel.swift */,
+				3BC08020282AF74300D2A442 /* PhotosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B8B6DC2282CE6E7009C2DAB /* Celebration */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6DBD282C6D98009C2DAB /* ParticleModifier.swift */,
+				3B8B6DBB282C6D53009C2DAB /* FireworkParticlesGeometryEffect.swift */,
+			);
+			path = Celebration;
+			sourceTree = "<group>";
+		};
+		3B8B6DC3282CE6FC009C2DAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6DC4282CE71E009C2DAB /* Buttons */,
+				3BC07FF6282AF65A00D2A442 /* ContentView.swift */,
+				3BC0801E282AF67C00D2A442 /* CardView.swift */,
+				3B8B6DBF282C84F6009C2DAB /* IntroScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B8B6DC4282CE71E009C2DAB /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3BC08022282B4DC300D2A442 /* GoogleButton.swift */,
+				3B8B6E25282D616C009C2DAB /* SignOutButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3B8B6DC8282D26E0009C2DAB /* GPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6E0B282D3B2F009C2DAB /* Network */,
+				3B8B6DC9282D2738009C2DAB /* GPhotos.swift */,
+				3B8B6DCF282D2890009C2DAB /* GPhotosApi.swift */,
+				3B8B6DDA282D325B009C2DAB /* Models */,
+				3B8B6DCB282D275B009C2DAB /* Const.swift */,
+				3B8B6DCD282D277F009C2DAB /* AuthScope.swift */,
+			);
+			path = GPhotos;
+			sourceTree = "<group>";
+		};
+		3B8B6DD1282D2B96009C2DAB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6DD2282D2BA6009C2DAB /* MediaItemsService.swift */,
+				3B8B6DD4282D2C09009C2DAB /* GPhotosService.swift */,
+				3B8B6DD6282D2CB7009C2DAB /* AlbumsService.swift */,
+				3B8B6DD8282D2CFA009C2DAB /* SharedAlbumsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3B8B6DDA282D325B009C2DAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6DF6282D365F009C2DAB /* MediaItems */,
+				3B8B6DDF282D32E4009C2DAB /* Albums */,
+				3B8B6DF0282D35AC009C2DAB /* BaseMappable.swift */,
+				3B8B6DF2282D35D8009C2DAB /* ContributorInfo.swift */,
+				3B8B6DF4282D35F1009C2DAB /* Status.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B8B6DDF282D32E4009C2DAB /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6DDB282D327E009C2DAB /* Album.swift */,
+				3B8B6DDD282D3299009C2DAB /* AlbumPosition.swift */,
+				3B8B6DE0282D3338009C2DAB /* Requests */,
+			);
+			path = Albums;
+			sourceTree = "<group>";
+		};
+		3B8B6DE0282D3338009C2DAB /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6DE1282D3365009C2DAB /* AlbumsAddEnrichment.swift */,
+				3B8B6DE3282D3389009C2DAB /* AlbumsAddMediaItems.swift */,
+				3B8B6DE5282D33B7009C2DAB /* AlbumsList.swift */,
+				3B8B6DE7282D33D1009C2DAB /* AlbumsShare.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		3B8B6DF6282D365F009C2DAB /* MediaItems */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6E00282D375A009C2DAB /* Filters */,
+				3B8B6DF7282D36A0009C2DAB /* Requests */,
+				3B8B6DED282D3495009C2DAB /* MediaMetadata.swift */,
+				3B8B6DEB282D3471009C2DAB /* MediaItem.swift */,
+				3B8B6DE9282D3430009C2DAB /* Photos.swift */,
+			);
+			path = MediaItems;
+			sourceTree = "<group>";
+		};
+		3B8B6DF7282D36A0009C2DAB /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6DF8282D36C5009C2DAB /* MediaItemsBatchGet.swift */,
+				3B8B6DFA282D36F7009C2DAB /* MediaItemBatchCreate.swift */,
+				3B8B6DFC282D3716009C2DAB /* MediaItemsList.swift */,
+				3B8B6DFE282D3731009C2DAB /* MediaItemsSearch.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		3B8B6E00282D375A009C2DAB /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6E01282D3777009C2DAB /* ContentFilter.swift */,
+				3B8B6E05282D37BE009C2DAB /* FeatureFilter.swift */,
+				3B8B6E03282D3798009C2DAB /* DateFilter.swift */,
+				3B8B6E07282D37D3009C2DAB /* Filters.swift */,
+				3B8B6E09282D37F0009C2DAB /* MediaTypeFilter.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		3B8B6E0B282D3B2F009C2DAB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6DD1282D2B96009C2DAB /* Services */,
+				3B8B6E0C282D3B3D009C2DAB /* Resources */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3B8B6E0C282D3B3D009C2DAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6E0D282D3B50009C2DAB /* MediaItems.swift */,
+				3B8B6E0F282D3B71009C2DAB /* GPhotosResources.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3B8B6E2B282DB268009C2DAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6E2C282DB28B009C2DAB /* PhotoImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BC07FE8282AF65A00D2A442 = {
+			isa = PBXGroup;
+			children = (
+				3BC07FF3282AF65A00D2A442 /* GoodOnesTest */,
+				3BC08004282AF65F00D2A442 /* GoodOnesTestTests */,
+				3BC0800E282AF65F00D2A442 /* GoodOnesTestUITests */,
+				3BC07FF2282AF65A00D2A442 /* Products */,
+				DB52005512CED6E01313B910 /* Pods */,
+				8397F56879A80FE050FA5DB5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3BC07FF2282AF65A00D2A442 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BC07FF1282AF65A00D2A442 /* GoodOnesTest.app */,
+				3BC08001282AF65F00D2A442 /* GoodOnesTestTests.xctest */,
+				3BC0800B282AF65F00D2A442 /* GoodOnesTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BC07FF3282AF65A00D2A442 /* GoodOnesTest */ = {
+			isa = PBXGroup;
+			children = (
+				3B8B6E18282D4F5C009C2DAB /* GoogleService-Info.plist */,
+				3BC08028282B731300D2A442 /* Info.plist */,
+				3BC07FF4282AF65A00D2A442 /* GoodOnesTestApp.swift */,
+				3B8B6E2B282DB268009C2DAB /* Model */,
+				3B8B6DC1282CE6D4009C2DAB /* ViewModel */,
+				3B8B6DC2282CE6E7009C2DAB /* Celebration */,
+				3BC08026282B6B7600D2A442 /* AppDelegate.swift */,
+				3B8B6DC8282D26E0009C2DAB /* GPhotos */,
+				3B8B6DC3282CE6FC009C2DAB /* Views */,
+				3BC07FF8282AF65E00D2A442 /* Assets.xcassets */,
+				3BC07FFA282AF65E00D2A442 /* Preview Content */,
+			);
+			path = GoodOnesTest;
+			sourceTree = "<group>";
+		};
+		3BC07FFA282AF65E00D2A442 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3BC07FFB282AF65E00D2A442 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BC08004282AF65F00D2A442 /* GoodOnesTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BC08005282AF65F00D2A442 /* GoodOnesTestTests.swift */,
+			);
+			path = GoodOnesTestTests;
+			sourceTree = "<group>";
+		};
+		3BC0800E282AF65F00D2A442 /* GoodOnesTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3BC0800F282AF65F00D2A442 /* GoodOnesTestUITests.swift */,
+				3BC08011282AF65F00D2A442 /* GoodOnesTestUITestsLaunchTests.swift */,
+			);
+			path = GoodOnesTestUITests;
+			sourceTree = "<group>";
+		};
+		8397F56879A80FE050FA5DB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66A0FE743ABD696940B7A926 /* Pods_GoodOnesTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB52005512CED6E01313B910 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17B8CF892986B30BD0788130 /* Pods-GoodOnesTest.debug.xcconfig */,
+				763BBB02D721936D96D5DB0E /* Pods-GoodOnesTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BC07FF0282AF65A00D2A442 /* GoodOnesTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC08015282AF65F00D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTest" */;
+			buildPhases = (
+				1EB77D09DE3C6996C3C844F3 /* [CP] Check Pods Manifest.lock */,
+				3BC07FED282AF65A00D2A442 /* Sources */,
+				3BC07FEE282AF65A00D2A442 /* Frameworks */,
+				3BC07FEF282AF65A00D2A442 /* Resources */,
+				7A2A5BB258B9FE0C8762C0AB /* [CP] Embed Pods Frameworks */,
+				CA97BE2BA4BFBCCAC2999FEB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodOnesTest;
+			productName = GoodOnesTest;
+			productReference = 3BC07FF1282AF65A00D2A442 /* GoodOnesTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BC08000282AF65F00D2A442 /* GoodOnesTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC08018282AF65F00D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTestTests" */;
+			buildPhases = (
+				3BC07FFD282AF65F00D2A442 /* Sources */,
+				3BC07FFE282AF65F00D2A442 /* Frameworks */,
+				3BC07FFF282AF65F00D2A442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BC08003282AF65F00D2A442 /* PBXTargetDependency */,
+			);
+			name = GoodOnesTestTests;
+			productName = GoodOnesTestTests;
+			productReference = 3BC08001282AF65F00D2A442 /* GoodOnesTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3BC0800A282AF65F00D2A442 /* GoodOnesTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC0801B282AF65F00D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTestUITests" */;
+			buildPhases = (
+				3BC08007282AF65F00D2A442 /* Sources */,
+				3BC08008282AF65F00D2A442 /* Frameworks */,
+				3BC08009282AF65F00D2A442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BC0800D282AF65F00D2A442 /* PBXTargetDependency */,
+			);
+			name = GoodOnesTestUITests;
+			productName = GoodOnesTestUITests;
+			productReference = 3BC0800B282AF65F00D2A442 /* GoodOnesTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BC07FE9282AF65A00D2A442 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3BC07FF0282AF65A00D2A442 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					3BC08000282AF65F00D2A442 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3BC07FF0282AF65A00D2A442;
+					};
+					3BC0800A282AF65F00D2A442 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3BC07FF0282AF65A00D2A442;
+					};
+				};
+			};
+			buildConfigurationList = 3BC07FEC282AF65A00D2A442 /* Build configuration list for PBXProject "GoodOnesTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BC07FE8282AF65A00D2A442;
+			packageReferences = (
+				3B8B6E1A282D5105009C2DAB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3B8B6E1B282D523B009C2DAB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 3BC07FF2282AF65A00D2A442 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BC07FF0282AF65A00D2A442 /* GoodOnesTest */,
+				3BC08000282AF65F00D2A442 /* GoodOnesTestTests */,
+				3BC0800A282AF65F00D2A442 /* GoodOnesTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BC07FEF282AF65A00D2A442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC07FFC282AF65E00D2A442 /* Preview Assets.xcassets in Resources */,
+				3BC07FF9282AF65E00D2A442 /* Assets.xcassets in Resources */,
+				3B8B6E19282D4F5C009C2DAB /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC07FFF282AF65F00D2A442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC08009282AF65F00D2A442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EB77D09DE3C6996C3C844F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodOnesTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A2A5BB258B9FE0C8762C0AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodOnesTest/Pods-GoodOnesTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodOnesTest/Pods-GoodOnesTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodOnesTest/Pods-GoodOnesTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA97BE2BA4BFBCCAC2999FEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodOnesTest/Pods-GoodOnesTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodOnesTest/Pods-GoodOnesTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodOnesTest/Pods-GoodOnesTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BC07FED282AF65A00D2A442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B8B6DC0282C84F6009C2DAB /* IntroScreen.swift in Sources */,
+				3B8B6DD0282D2890009C2DAB /* GPhotosApi.swift in Sources */,
+				3B8B6DF9282D36C5009C2DAB /* MediaItemsBatchGet.swift in Sources */,
+				3B8B6E26282D616C009C2DAB /* SignOutButton.swift in Sources */,
+				3B8B6DDC282D327E009C2DAB /* Album.swift in Sources */,
+				3B8B6DE6282D33B7009C2DAB /* AlbumsList.swift in Sources */,
+				3B8B6DDE282D3299009C2DAB /* AlbumPosition.swift in Sources */,
+				3BC07FF7282AF65A00D2A442 /* ContentView.swift in Sources */,
+				3B8B6DF1282D35AC009C2DAB /* BaseMappable.swift in Sources */,
+				3B8B6DCA282D2738009C2DAB /* GPhotos.swift in Sources */,
+				3B8B6E08282D37D3009C2DAB /* Filters.swift in Sources */,
+				3B8B6DD5282D2C09009C2DAB /* GPhotosService.swift in Sources */,
+				3B8B6DBC282C6D53009C2DAB /* FireworkParticlesGeometryEffect.swift in Sources */,
+				3B8B6E02282D3777009C2DAB /* ContentFilter.swift in Sources */,
+				3BC08021282AF74400D2A442 /* PhotosViewModel.swift in Sources */,
+				3B8B6DF5282D35F1009C2DAB /* Status.swift in Sources */,
+				3B8B6DD7282D2CB7009C2DAB /* AlbumsService.swift in Sources */,
+				3B8B6DE8282D33D1009C2DAB /* AlbumsShare.swift in Sources */,
+				3B8B6DE2282D3365009C2DAB /* AlbumsAddEnrichment.swift in Sources */,
+				3B8B6DEC282D3471009C2DAB /* MediaItem.swift in Sources */,
+				3B8B6DCC282D275B009C2DAB /* Const.swift in Sources */,
+				3BC0801F282AF67C00D2A442 /* CardView.swift in Sources */,
+				3BC07FF5282AF65A00D2A442 /* GoodOnesTestApp.swift in Sources */,
+				3B8B6DD3282D2BA6009C2DAB /* MediaItemsService.swift in Sources */,
+				3B8B6DCE282D277F009C2DAB /* AuthScope.swift in Sources */,
+				3B8B6E2D282DB28C009C2DAB /* PhotoImage.swift in Sources */,
+				3B8B6DEA282D3430009C2DAB /* Photos.swift in Sources */,
+				3B8B6DFD282D3716009C2DAB /* MediaItemsList.swift in Sources */,
+				3B8B6E04282D3798009C2DAB /* DateFilter.swift in Sources */,
+				3B8B6DBE282C6D98009C2DAB /* ParticleModifier.swift in Sources */,
+				3B8B6DFF282D3731009C2DAB /* MediaItemsSearch.swift in Sources */,
+				3B8B6E0E282D3B50009C2DAB /* MediaItems.swift in Sources */,
+				3B8B6DD9282D2CFA009C2DAB /* SharedAlbumsService.swift in Sources */,
+				3BC08027282B6B7600D2A442 /* AppDelegate.swift in Sources */,
+				3B8B6E06282D37BE009C2DAB /* FeatureFilter.swift in Sources */,
+				3B8B6DFB282D36F7009C2DAB /* MediaItemBatchCreate.swift in Sources */,
+				3B8B6E10282D3B71009C2DAB /* GPhotosResources.swift in Sources */,
+				3B8B6DE4282D3389009C2DAB /* AlbumsAddMediaItems.swift in Sources */,
+				3B8B6E0A282D37F0009C2DAB /* MediaTypeFilter.swift in Sources */,
+				3BC08023282B4DC300D2A442 /* GoogleButton.swift in Sources */,
+				3B8B6DEE282D3495009C2DAB /* MediaMetadata.swift in Sources */,
+				3BC08025282B4E3E00D2A442 /* GoogleLoginViewModel.swift in Sources */,
+				3B8B6DF3282D35D8009C2DAB /* ContributorInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC07FFD282AF65F00D2A442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC08006282AF65F00D2A442 /* GoodOnesTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC08007282AF65F00D2A442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC08012282AF65F00D2A442 /* GoodOnesTestUITestsLaunchTests.swift in Sources */,
+				3BC08010282AF65F00D2A442 /* GoodOnesTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BC08003282AF65F00D2A442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC07FF0282AF65A00D2A442 /* GoodOnesTest */;
+			targetProxy = 3BC08002282AF65F00D2A442 /* PBXContainerItemProxy */;
+		};
+		3BC0800D282AF65F00D2A442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC07FF0282AF65A00D2A442 /* GoodOnesTest */;
+			targetProxy = 3BC0800C282AF65F00D2A442 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3BC08013282AF65F00D2A442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BC08014282AF65F00D2A442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BC08016282AF65F00D2A442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17B8CF892986B30BD0788130 /* Pods-GoodOnesTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodOnesTest/Preview Content\"";
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoodOnesTest/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Let me see yo photos";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3BC08017282AF65F00D2A442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 763BBB02D721936D96D5DB0E /* Pods-GoodOnesTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodOnesTest/Preview Content\"";
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoodOnesTest/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Let me see yo photos";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3BC08019282AF65F00D2A442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodOnesTest.app/GoodOnesTest";
+			};
+			name = Debug;
+		};
+		3BC0801A282AF65F00D2A442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodOnesTest.app/GoodOnesTest";
+			};
+			name = Release;
+		};
+		3BC0801C282AF65F00D2A442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodOnesTest;
+			};
+			name = Debug;
+		};
+		3BC0801D282AF65F00D2A442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodOnesTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BC07FEC282AF65A00D2A442 /* Build configuration list for PBXProject "GoodOnesTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC08013282AF65F00D2A442 /* Debug */,
+				3BC08014282AF65F00D2A442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC08015282AF65F00D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC08016282AF65F00D2A442 /* Debug */,
+				3BC08017282AF65F00D2A442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC08018282AF65F00D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC08019282AF65F00D2A442 /* Debug */,
+				3BC0801A282AF65F00D2A442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC0801B282AF65F00D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC0801C282AF65F00D2A442 /* Debug */,
+				3BC0801D282AF65F00D2A442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B8B6E1A282D5105009C2DAB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		3B8B6E1B282D523B009C2DAB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = 3BC07FE9282AF65A00D2A442 /* Project object */;
+}

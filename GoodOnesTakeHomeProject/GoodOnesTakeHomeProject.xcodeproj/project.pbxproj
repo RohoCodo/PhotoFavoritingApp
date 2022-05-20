@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BC07FBA2828C88300D2A442 /* GoodOnesTakeHomeProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC07FB92828C88300D2A442 /* GoodOnesTakeHomeProjectApp.swift */; };
+		3BC07FBC2828C88300D2A442 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC07FBB2828C88300D2A442 /* PhotosView.swift */; };
+		3BC07FBE2828C88700D2A442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC07FBD2828C88700D2A442 /* Assets.xcassets */; };
+		3BC07FC12828C88700D2A442 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC07FC02828C88700D2A442 /* Preview Assets.xcassets */; };
+		3BC07FCB2828C88700D2A442 /* GoodOnesTakeHomeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC07FCA2828C88700D2A442 /* GoodOnesTakeHomeProjectTests.swift */; };
+		3BC07FD52828C88700D2A442 /* GoodOnesTakeHomeProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC07FD42828C88700D2A442 /* GoodOnesTakeHomeProjectUITests.swift */; };
+		3BC07FD72828C88700D2A442 /* GoodOnesTakeHomeProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC07FD62828C88700D2A442 /* GoodOnesTakeHomeProjectUITestsLaunchTests.swift */; };
+		3BC07FE42828C8CC00D2A442 /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC07FE32828C8CC00D2A442 /* PhotosViewModel.swift */; };
+		3BC07FE62828C8E400D2A442 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC07FE52828C8E400D2A442 /* CardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BC07FC72828C88700D2A442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC07FAE2828C88200D2A442 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC07FB52828C88300D2A442;
+			remoteInfo = GoodOnesTakeHomeProject;
+		};
+		3BC07FD12828C88700D2A442 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC07FAE2828C88200D2A442 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BC07FB52828C88300D2A442;
+			remoteInfo = GoodOnesTakeHomeProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BC07FB62828C88300D2A442 /* GoodOnesTakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodOnesTakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC07FB92828C88300D2A442 /* GoodOnesTakeHomeProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodOnesTakeHomeProjectApp.swift; sourceTree = "<group>"; };
+		3BC07FBB2828C88300D2A442 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		3BC07FBD2828C88700D2A442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BC07FC02828C88700D2A442 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BC07FC62828C88700D2A442 /* GoodOnesTakeHomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodOnesTakeHomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC07FCA2828C88700D2A442 /* GoodOnesTakeHomeProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodOnesTakeHomeProjectTests.swift; sourceTree = "<group>"; };
+		3BC07FD02828C88700D2A442 /* GoodOnesTakeHomeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodOnesTakeHomeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC07FD42828C88700D2A442 /* GoodOnesTakeHomeProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodOnesTakeHomeProjectUITests.swift; sourceTree = "<group>"; };
+		3BC07FD62828C88700D2A442 /* GoodOnesTakeHomeProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodOnesTakeHomeProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BC07FE32828C8CC00D2A442 /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
+		3BC07FE52828C8E400D2A442 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3BC07FE72829960D00D2A442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BC07FB32828C88300D2A442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC07FC32828C88700D2A442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC07FCD2828C88700D2A442 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BC07FAD2828C88200D2A442 = {
+			isa = PBXGroup;
+			children = (
+				3BC07FB82828C88300D2A442 /* GoodOnesTakeHomeProject */,
+				3BC07FC92828C88700D2A442 /* GoodOnesTakeHomeProjectTests */,
+				3BC07FD32828C88700D2A442 /* GoodOnesTakeHomeProjectUITests */,
+				3BC07FB72828C88300D2A442 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BC07FB72828C88300D2A442 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BC07FB62828C88300D2A442 /* GoodOnesTakeHomeProject.app */,
+				3BC07FC62828C88700D2A442 /* GoodOnesTakeHomeProjectTests.xctest */,
+				3BC07FD02828C88700D2A442 /* GoodOnesTakeHomeProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BC07FB82828C88300D2A442 /* GoodOnesTakeHomeProject */ = {
+			isa = PBXGroup;
+			children = (
+				3BC07FE72829960D00D2A442 /* Info.plist */,
+				3BC07FB92828C88300D2A442 /* GoodOnesTakeHomeProjectApp.swift */,
+				3BC07FBB2828C88300D2A442 /* PhotosView.swift */,
+				3BC07FE32828C8CC00D2A442 /* PhotosViewModel.swift */,
+				3BC07FE52828C8E400D2A442 /* CardView.swift */,
+				3BC07FBD2828C88700D2A442 /* Assets.xcassets */,
+				3BC07FBF2828C88700D2A442 /* Preview Content */,
+			);
+			path = GoodOnesTakeHomeProject;
+			sourceTree = "<group>";
+		};
+		3BC07FBF2828C88700D2A442 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3BC07FC02828C88700D2A442 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BC07FC92828C88700D2A442 /* GoodOnesTakeHomeProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BC07FCA2828C88700D2A442 /* GoodOnesTakeHomeProjectTests.swift */,
+			);
+			path = GoodOnesTakeHomeProjectTests;
+			sourceTree = "<group>";
+		};
+		3BC07FD32828C88700D2A442 /* GoodOnesTakeHomeProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3BC07FD42828C88700D2A442 /* GoodOnesTakeHomeProjectUITests.swift */,
+				3BC07FD62828C88700D2A442 /* GoodOnesTakeHomeProjectUITestsLaunchTests.swift */,
+			);
+			path = GoodOnesTakeHomeProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BC07FB52828C88300D2A442 /* GoodOnesTakeHomeProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC07FDA2828C88700D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTakeHomeProject" */;
+			buildPhases = (
+				3BC07FB22828C88300D2A442 /* Sources */,
+				3BC07FB32828C88300D2A442 /* Frameworks */,
+				3BC07FB42828C88300D2A442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodOnesTakeHomeProject;
+			productName = GoodOnesTakeHomeProject;
+			productReference = 3BC07FB62828C88300D2A442 /* GoodOnesTakeHomeProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BC07FC52828C88700D2A442 /* GoodOnesTakeHomeProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC07FDD2828C88700D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTakeHomeProjectTests" */;
+			buildPhases = (
+				3BC07FC22828C88700D2A442 /* Sources */,
+				3BC07FC32828C88700D2A442 /* Frameworks */,
+				3BC07FC42828C88700D2A442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BC07FC82828C88700D2A442 /* PBXTargetDependency */,
+			);
+			name = GoodOnesTakeHomeProjectTests;
+			productName = GoodOnesTakeHomeProjectTests;
+			productReference = 3BC07FC62828C88700D2A442 /* GoodOnesTakeHomeProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3BC07FCF2828C88700D2A442 /* GoodOnesTakeHomeProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BC07FE02828C88700D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTakeHomeProjectUITests" */;
+			buildPhases = (
+				3BC07FCC2828C88700D2A442 /* Sources */,
+				3BC07FCD2828C88700D2A442 /* Frameworks */,
+				3BC07FCE2828C88700D2A442 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BC07FD22828C88700D2A442 /* PBXTargetDependency */,
+			);
+			name = GoodOnesTakeHomeProjectUITests;
+			productName = GoodOnesTakeHomeProjectUITests;
+			productReference = 3BC07FD02828C88700D2A442 /* GoodOnesTakeHomeProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BC07FAE2828C88200D2A442 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3BC07FB52828C88300D2A442 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					3BC07FC52828C88700D2A442 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3BC07FB52828C88300D2A442;
+					};
+					3BC07FCF2828C88700D2A442 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 3BC07FB52828C88300D2A442;
+					};
+				};
+			};
+			buildConfigurationList = 3BC07FB12828C88200D2A442 /* Build configuration list for PBXProject "GoodOnesTakeHomeProject" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BC07FAD2828C88200D2A442;
+			productRefGroup = 3BC07FB72828C88300D2A442 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BC07FB52828C88300D2A442 /* GoodOnesTakeHomeProject */,
+				3BC07FC52828C88700D2A442 /* GoodOnesTakeHomeProjectTests */,
+				3BC07FCF2828C88700D2A442 /* GoodOnesTakeHomeProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BC07FB42828C88300D2A442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC07FC12828C88700D2A442 /* Preview Assets.xcassets in Resources */,
+				3BC07FBE2828C88700D2A442 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC07FC42828C88700D2A442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC07FCE2828C88700D2A442 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BC07FB22828C88300D2A442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC07FE42828C8CC00D2A442 /* PhotosViewModel.swift in Sources */,
+				3BC07FBC2828C88300D2A442 /* PhotosView.swift in Sources */,
+				3BC07FE62828C8E400D2A442 /* CardView.swift in Sources */,
+				3BC07FBA2828C88300D2A442 /* GoodOnesTakeHomeProjectApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC07FC22828C88700D2A442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC07FCB2828C88700D2A442 /* GoodOnesTakeHomeProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BC07FCC2828C88700D2A442 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BC07FD72828C88700D2A442 /* GoodOnesTakeHomeProjectUITestsLaunchTests.swift in Sources */,
+				3BC07FD52828C88700D2A442 /* GoodOnesTakeHomeProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BC07FC82828C88700D2A442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC07FB52828C88300D2A442 /* GoodOnesTakeHomeProject */;
+			targetProxy = 3BC07FC72828C88700D2A442 /* PBXContainerItemProxy */;
+		};
+		3BC07FD22828C88700D2A442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BC07FB52828C88300D2A442 /* GoodOnesTakeHomeProject */;
+			targetProxy = 3BC07FD12828C88700D2A442 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3BC07FD82828C88700D2A442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BC07FD92828C88700D2A442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BC07FDB2828C88700D2A442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodOnesTakeHomeProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoodOnesTakeHomeProject/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Can we use your photos ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTakeHomeProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BC07FDC2828C88700D2A442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GoodOnesTakeHomeProject/Preview Content\"";
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GoodOnesTakeHomeProject/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Can we use your photos ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTakeHomeProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3BC07FDE2828C88700D2A442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTakeHomeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodOnesTakeHomeProject.app/GoodOnesTakeHomeProject";
+			};
+			name = Debug;
+		};
+		3BC07FDF2828C88700D2A442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTakeHomeProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodOnesTakeHomeProject.app/GoodOnesTakeHomeProject";
+			};
+			name = Release;
+		};
+		3BC07FE12828C88700D2A442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTakeHomeProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodOnesTakeHomeProject;
+			};
+			name = Debug;
+		};
+		3BC07FE22828C88700D2A442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7XP2RUZ6VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Rohan.PersonalProject.GoodOnesTakeHomeProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoodOnesTakeHomeProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BC07FB12828C88200D2A442 /* Build configuration list for PBXProject "GoodOnesTakeHomeProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC07FD82828C88700D2A442 /* Debug */,
+				3BC07FD92828C88700D2A442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC07FDA2828C88700D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTakeHomeProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC07FDB2828C88700D2A442 /* Debug */,
+				3BC07FDC2828C88700D2A442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC07FDD2828C88700D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTakeHomeProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC07FDE2828C88700D2A442 /* Debug */,
+				3BC07FDF2828C88700D2A442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BC07FE02828C88700D2A442 /* Build configuration list for PBXNativeTarget "GoodOnesTakeHomeProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BC07FE12828C88700D2A442 /* Debug */,
+				3BC07FE22828C88700D2A442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BC07FAE2828C88200D2A442 /* Project object */;
+}

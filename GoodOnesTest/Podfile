@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+use_frameworks!
+platform :ios, '14.0'
+
+
+target 'GoodOnesTest' do
+   pod 'GoogleSignIn', '5.0.0'
+   pod 'GPhotos'
+   pod 'Instructions', '~> 2.1.1'
+   pod 'Moya', '~> 15.0'
+   pod 'ObjectMapper'
+   pod 'Firebase/Firestore'
+   pod 'FirebaseFirestoreSwift'
+   pod 'GoogleAPIClient'
+   pod 'Alamofire'
+
+
+end
